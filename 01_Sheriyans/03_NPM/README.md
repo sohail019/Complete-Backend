@@ -41,3 +41,13 @@
   ```
 
 - This command will remove the package from the `node_modules` directory and update the `package.json` file accordingly.
+
+### Dependencies
+
+- Dependencies are packages that your project relies on to function correctly.
+- They are listed in the `package.json` file under the `dependencies` section.
+
+### DevDependencies
+
+- DevDependencies are packages that are only needed during development and testing.
+- They are listed in the `package.json` file under the `devDependencies` section.
