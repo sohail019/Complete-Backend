@@ -1,3 +1,6 @@
+//? configure environment variable
+require("dotenv").config();
+
 //? Import express from express
 const express = require("express");
 
@@ -23,6 +26,10 @@ app.get("/login", (req, res) => {
 });
 
 //? listen to the port 4000
-app.listen(port, () => {
+// app.listen(port, () => {
+//   console.log(`This app is listening to port: ${port}`);
+// });
+
+app.listen(process.env.PORT, () => {
   console.log(`This app is listening to port: ${port}`);
 });
